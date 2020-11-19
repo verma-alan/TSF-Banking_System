@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset = "utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Accreedora Bank</title>
+	<link rel = "stylesheet" type = "text/css" href = "{% static 'customer/main.css' %}">
+	{% block link %} {% endblock link %}
+</head>
+<body>	
+<nav>	
+<ul>
+	<li> <a href = "{% url 'home' %}"> Home </a></li>
+	<li> <a href = "{% url 'customer-home' %}"> View all customers </a></li>
+	<li><a href = "{% url 'transaction-home' %}"> View all transactions </a></li>
+</ul>
+</nav>	
+<div class = "container">
+  <div class="parent">
+	{% block content %}
+	{% endblock content %}
+  </div>	
+</div>
+</body>
+</html>

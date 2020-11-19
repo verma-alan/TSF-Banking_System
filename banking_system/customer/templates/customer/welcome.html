@@ -1,0 +1,32 @@
+{% extends "customer/base.html" %}
+{% load static %}
+
+{% block link %}
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+       <link rel = "stylesheet" type = "text/css" href = "{% static 'customer/welcome.css' %}">
+{% endblock link %}
+
+{% block content %}
+		<div class = "first">
+			<div class = "square">
+			</div>		
+		</div>
+	  <div class = "bank-name-container">
+		<div class = "bank-name">
+			Accreedora Bank
+		</div>	
+	 </div>	
+		<div class = "second">
+			<div class = "card1">
+				<span class = "valign">
+				One can select a person to pay from a list of customers and transfer the money from any customer to any other customer of this bank.
+			</span>
+			</div>
+			<div class="card2">
+				<span class="valign">
+				Information about transactions is saved and can be viewed by anyone in case they want to see the previous transactions between any two customers. 		
+				</span>
+				</div>
+		</div>	
+{% endblock content %}

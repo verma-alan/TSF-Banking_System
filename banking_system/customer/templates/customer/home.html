@@ -1,0 +1,61 @@
+{% extends "customer/base.html" %}
+{% load static %}
+
+{% block link %}
+	   <link rel = "stylesheet" type = "text/css" href = "{% static 'customer/home.css' %}">
+{% endblock link %}
+
+{% block content %}
+  {% block heading %} 
+         <div class = "top-heading"><h1> Customers </h1></div>
+        <hr>
+  {% endblock heading %}
+
+{% block transac %}  
+<section class = "data-container">
+     	<div class = "item heading"> 
+     		<div class = "sub"> A/C Number </div>
+     		<div class="sub"> Balance(INR) </div>		
+     	 </div>
+    	<div class = "item heading"> 
+    	  <div class = "sub"> Name </div>
+    	  <div class="sub"> Age </div>		
+    	</div> 
+   {% for customer in customer_list %}
+   		<div class="item"> 
+        {% block transfer %}
+   			<div class = "sub"><a href = "{% url 'customer-detail' customer.account_number %}"> {{customer.account_number}} </a></div>
+        {% endblock transfer %}
+   			<div class="sub"> {{customer.balance}} </div>   		
+   		</div>	
+   		<div class="item"> 
+   			<div class = "sub"> {{customer.name}} </div>
+   			<div class="sub"> {{customer.calc_age}} </div>
+   		</div>	
+
+   {% endfor %}		  
+</section>
+
+{% endblock transac %}
+<div class = "button-container">
+{% if is_paginated %}
+  {% if page_obj.has_previous %}
+    <a href = "?page=1"> &laquo;</a>
+    <a href = "?page={{page_obj.previous_page_number}}"> Previous </a>
+   {% endif %}
+    {% for num in page_obj.paginator.page_range %}
+      {% if page_obj.number == num %}
+        <a href = "?page={{num}}" class = "current"> {{num}} </a> 
+      {% elif page_obj.number|add:'-3' < num and num < page_obj.number|add:'3' %}  
+        <a href = "?page={{num}}" class = "numbered-link"> {{num}} </a>
+      {% endif %}
+     {% endfor %}
+
+  {% if page_obj.has_next %}
+    <a href = "?page={{page_obj.next_page_number}}"> Next </a>
+    <a href = "?page={{page_obj.paginator.num_pages}}"> &raquo; </a>
+  {% endif %}
+  
+ {% endif %}
+</div>     
+{% endblock content %}	   

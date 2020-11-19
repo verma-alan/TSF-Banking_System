@@ -1,0 +1,53 @@
+{% extends "customer/details.html" %}
+{% load static %}
+
+{% block pre-transaction-link %}
+	<link rel = "stylesheet" type = "text/css" href = "{% static 'transaction/transaction_process.css' %}">
+{% endblock pre-transaction-link %}	
+{% block pre-transaction %}
+	{% if messages %}
+		{% for message in messages %}
+			<div class = "msg-container {{message.tags}}"> 
+				{{message}}
+			</div>
+		{% endfor %}
+	{% endif %}			
+	<div class = "heading"><h1> Money Transaction </h1></div>
+	<hr>
+	<div class = "account-info grid-container">
+		<div class = "item grid-heading"> Creditor Info </div>
+		<div class = "item sub"> A/C Number </div>	
+		<div class = "item"> {{creditor_obj.account_number}} </div>
+		<div class="item sub"> Name </div>
+		<div class = "item"> {{creditor_obj.name}} </div>
+		<div class = "item sub"> Balance (INR) </div>
+		<div class = "item"> {{creditor_obj.balance}} </div>
+	</div>	
+	<div class = "personal-info grid-container">
+		<div class = "item grid-heading"> Debtor Info </div>
+		<div class = "item sub"> A/C Number </div>	
+		<div class = "item"> {{debtor_obj.account_number}} </div>
+		<div class="item sub"> Name </div>
+		<div class = "item"> {{debtor_obj.name}} </div>
+		<div class = "item sub"> Balance (INR) </div>
+		<div class = "item"> {{debtor_obj.balance}} </div>
+	</div>	
+	<form method = "POST" id = "my_form"> {% csrf_token %}
+	<div class = "personal-info grid-container">
+		<div class = "item grid-heading"> Money Transfer Info </div>
+		<div class = "item sub"> Enter money </div>
+		<div class = "item"> 
+			{% for field in form.visible_fields %}
+				{{field}}
+			{% endfor %}	
+		</div>
+	</div>	
+	<div class = "msg-container {{msg_status}}">
+    	{{transaction_message}}
+	</div>
+	<div class = "button-container">
+		<a href = "javascript:{}" onclick="document.getElementById('my_form').submit();"> Make Transfer </a>
+	</div>	
+	</form>	
+{% endblock pre-transaction %}
+

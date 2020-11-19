@@ -1,0 +1,33 @@
+{% extends 'customer/home.html' %}
+
+ {% block heading %} 
+         <div class = "top-heading"><h1> Transactions </h1></div>
+        <hr>
+ {% endblock heading %}
+
+ {% block transac %}  
+<section class = "data-container">
+     	<div class = "item heading"> 
+     		<div class = "sub"> Transaction ID </div>
+     		<div class="sub"> Balance(INR) </div>		
+     	 </div>
+    	<div class = "item heading"> 
+    	  <div class = "sub"> From </div>
+    	  <div class="sub"> To </div>		
+    	</div> 
+   {% for tran in transaction_list %}
+   		<div class="item"> 
+        {% block transfer %}
+   			<div class = "sub">{{tran.transaction_id}}</div>
+        {% endblock transfer %}
+   			<div class="sub"> {{tran.amount}} </div>   		
+   		</div>	
+   		<div class="item"> 
+   			<div class = "sub"><a href= "{% url 'customer-detail' tran.sender.account_number %}"> {{tran.sender.name}} </a></div>
+   			<div class="sub"><a href= "{% url 'customer-detail' tran.receiver.account_number %}"> {{tran.receiver.name}} </a></div>
+   		</div>	
+
+   {% endfor %}		  
+</section>
+
+{% endblock transac %}

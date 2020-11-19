@@ -1,0 +1,191 @@
+[
+{
+	"name": "Akshita Kukreja",
+    "email": "rakku46@hotmail.com",
+    "date_of_birth": "1980-07-02",
+	"mobile_number": 8712345612,
+	"balance": 24357.73
+},
+{
+	"name": "Abhishek Gangwar",
+	"email": "bhai56@gmail.com",
+	"date_of_birth": "1970-11-23",
+	"mobile_number": 337687321,
+	"balance": 256322.67
+},
+{
+	"name": "Apoorv Mehra",
+	"email": "main23@hotmail.com",
+	"date_of_birth": "1960-12-31",
+	"mobile_number": 3656373712,
+	"balance": 678932.12
+},
+{
+	"name": "Piyush Chaudhary",
+	"email": "main22@hotmail.com",
+	"date_of_birth": "1950-02-11",
+	"mobile_number": 6563737127,
+	"balance": 78932.12
+},
+{
+	"name": "Piyush Mehra",
+	"email": "main12@hotmail.com",
+	"date_of_birth": "2000-09-30",
+	"mobile_number": 3737127768,
+	"balance": 321.2
+},
+{
+	"name": "Samyak Jain",
+	"email": "rakku42@hotmail.com",
+	"date_of_birth": "1975-06-03",
+	"mobile_number": 3257737198,
+	"balance": 81353.36
+},
+{
+	"name": "Harsh Jain",
+	"email": "rakku99@hotmail.com",
+	"date_of_birth": "1975-05-03",
+	"mobile_number": 5773719823,
+	"balance": 1353.36
+},
+{
+	"name": "Akshita Jain",
+	"email": "rakku72@gmail.com",
+	"date_of_birth": "1963-01-01",
+	"mobile_number": 7371982356,
+	"balance": 7123.09
+},
+{
+	"name": "Abhishek Kukreja",
+	"email": "rakku75@hotmail.com",
+	"date_of_birth": "1956-03-09",
+	"mobile_number": 7371982359,
+	"balance": 37267387.37721
+},
+{
+	"name": "Apoorv Kukreja",
+	"email": "tabbu78@yahoo.com",
+	"date_of_birth": "1956-03-11",
+	"mobile_number": 7371982712,
+	"balance": 7267387.6712
+},
+{
+	"name": "Piyush Kukreja",
+	"email": "tabbu71@hotmail.com",
+	"date_of_birth": "1956-03-15",
+	"mobile_number": 7371982432,
+	"balance": 67387.6712
+},
+{
+	"name": "Prakhar Chaudhary",
+	"email": "tabbu72@yahoo.com",
+	"date_of_birth": "1977-03-15",
+	"mobile_number": 7371982498,
+	"balance": 673.671
+},
+{
+	"name": "Abhishek Chaudhary",
+	"email": "tabbu79@gmail.com",
+	"date_of_birth": "1977-03-23",
+	"mobile_number": 6123456781,
+	"balance": 9999.12
+},
+{
+	"name": "Apoorv Shukla",
+	"email": "rakku71@yahoo.com",
+	"date_of_birth": "1977-04-23",
+	"mobile_number": 1234567815,
+	"balance": 999.45
+},
+{
+	"name": "Piyush Shukla",
+	"email": "rakku43@yahoo.com",
+	"date_of_birth": "1989-04-23",
+	"mobile_number": 2345678158,
+	"balance": 79231.672
+},
+{
+	"name": "Akshita Shukla",
+	"email": "rakku44@gmail.com",
+	"date_of_birth": "1999-04-23",
+	"mobile_number": 4567815878,
+	"balance": 23167.2
+},
+{
+	"name": "Harsh Srivastav",
+	"email": "tabbu96@gmail.com",
+	"date_of_birth": "1999-05-23",
+	"mobile_number": 5678158780,
+	"balance": 31676
+},
+{
+	"name": "Akshita Srivastav",
+	"email": "tabbu97@hotmail.com",
+	"date_of_birth": "1976-05-23",
+	"mobile_number": 6781587801,
+	"balance": 25000
+},
+{
+	"name": "Abhishek Srivastav",
+	"email": "tabbu86@hotmail.com",
+	"date_of_birth": "1966-05-23",
+	"mobile_number": 7815878014,
+	"balance": 5000
+},
+{
+	"name": "Samyak Srivastav",
+	"email": "rakku36@gmail.com",
+	"date_of_birth": "2006-05-02",
+	"mobile_number": 1587801456,
+	"balance": 89001.91
+},
+{
+	"name": "Abhishek Srivastav",
+	"email": "jhamela31@gmail.com",
+	"date_of_birth": "2001-09-08",
+	"mobile_number": 5878014576,
+	"balance": 9001.91
+},
+{
+	"name": "Piyush Srivastav",
+	"email": "hamela31@gmail.com",
+	"date_of_birth": "2001-09-08",
+	"mobile_number": 8780145766,
+	"balance": 9001.91
+},
+{
+	"name": "Harshit Jain",
+	"email": "amela31@gmail.com",
+	"date_of_birth": "2004-09-08",
+	"mobile_number": 8780145761,
+	"balance": 100001
+},
+{
+	"name": "Harshit Srivastav",
+	"email": "mela31@gmail.com",
+	"date_of_birth": "1994-09-08",
+	"mobile_number": 7801457656,
+	"balance": 100001.89
+},
+{
+	"name": "Harshit Shukla",
+	"email": "ela31@gmail.com",
+	"date_of_birth": "1994-09-05",
+	"mobile_number": 8014576591,
+	"balance": 10000
+},
+{
+	"name": "Naman Shukla",
+	"email": "ela32@hotmail.com",
+	"date_of_birth": "1994-09-05",
+	"mobile_number": 8014576592,
+	"balance": 500
+},
+{
+	"name": "Naman Srivastav",
+	"email": "ela56@yahoo.com",
+	"date_of_birth": "1994-09-08",
+	"mobile_number":8014571234 ,
+	"balance": 1200
+}
+]

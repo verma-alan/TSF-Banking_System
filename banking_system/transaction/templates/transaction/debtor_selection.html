@@ -1,0 +1,10 @@
+{% extends "customer/home.html" %}
+
+ {% block heading %} 
+ 		<div class = "top-heading"><h1> Select Debtor </h1></div>
+ 		<hr>
+ {% endblock heading %}
+
+ {% block transfer %}
+   			<div class = "sub"><a href = "{% url 'money-transfer' view.kwargs.id customer.account_number %}"> {{customer.account_number}} </a></div>
+ {% endblock transfer %}

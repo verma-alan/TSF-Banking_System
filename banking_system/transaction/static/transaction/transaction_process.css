@@ -1,0 +1,27 @@
+.item input{
+/*	display: inline-block;*/
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	font-size: 25px;
+}
+
+.msg-container{
+	width: 90%;
+	text-align: center;
+	margin: auto;
+	color: #fff;
+}
+
+.wrong{
+	background-color: tomato;
+}
+
+.error{
+	background-color: tomato;
+}
+
+.success{
+	background-color: green;
+}
+

@@ -1,0 +1,43 @@
+{% extends "customer/base.html" %}
+{% load static %}
+
+{% block link %}
+	<link rel = "stylesheet" type = "text/css" href = "{% static 'customer/details.css' %}">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Goldman:wght@700&family=Oswald&display=swap" rel="stylesheet"> 
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet"> 
+{% block pre-transaction-link %} {% endblock pre-transaction-link %}
+{% endblock link %}
+
+{% block content %}
+	{% block pre-transaction %}
+	<div class = "heading"><h1> {{object.name}} </h1></div>
+	<hr>
+	<div class = "account-info grid-container">
+		<div class = "item grid-heading"> Account Info </div>
+		<div class = "item sub"> Date & Time Created </div>
+		<div class = "item"> {{object.date_created}} </div>
+		<div class = "item sub"> A/C Number </div>	
+		<div class = "item"> {{object.account_number}} </div>
+		<div class = "item sub"> Balance (INR) </div>
+		<div class = "item"> {{object.balance}} </div>
+	</div>	
+	<div class = "personal-info grid-container">
+		<div class = "item grid-heading"> Personal Info </div>
+		<div class = "item sub"> Date Of Birth </div>
+		<div class = "item"> {{object.date_of_birth}} </div>
+		<div class = "item sub"> Age </div>
+		<div class = "item"> {{object.calc_age}} </div>
+		<div class = "item sub"> Email </div>
+		<div class = "item"> {{object.email}} </div>
+		<div class = "item sub"> Mobile Number </div>
+		<div class = "item"> {{object.mobile_number}} </div>
+	</div>	
+
+	<div class = "button-container">
+		<a href = "{% url 'debtor-selection' object.account_number %}"> Transfer </a>
+	</div>	
+    {% endblock pre-transaction %}
+
+{% endblock content %}		

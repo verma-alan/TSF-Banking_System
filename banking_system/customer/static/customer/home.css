@@ -1,0 +1,155 @@
+hr{
+	width: 95%;
+}
+
+.top-heading{
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.data-container{
+	display: grid;
+	width: 90%;
+	margin: auto;
+	grid-template-columns: 4fr 3fr;
+	grid-template-rows: 100px;
+	grid-auto-rows: minmax(80px,auto);
+	grid-row-gap: 10px;
+	overflow: auto;
+}
+
+.item{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+	align-content: space-around;
+	font-size: 20px;
+	background-color: #d3d3d3;
+/*	border: 1px solid green;*/
+}
+
+.sub{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+/*	border: 1px solid red;*/
+}
+
+.heading{
+	background: #000;
+	color: white;
+	font-size: 30px;
+}
+
+.parent{
+background-color: #000000;
+background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+}
+
+div a{
+	color: black;
+}
+
+div a:hover{
+	color: brown;
+}
+
+
+.button-container{
+	margin: 50px auto;
+/*	border: 3px solid red;*/
+	text-align: center;
+	width: 90%;
+}
+
+.button-container a{
+	display: inline-block;
+	background-color: inherit;
+	padding: 15px 20px;
+	margin: 3px;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 100%;
+	position: relative;
+	z-index: 1;
+}
+
+.button-container a:after{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: linear-gradient(315deg, #fc5296 0%, #f67062 74%); 
+	border-radius: 100%;
+	opacity: 0;
+	transition: opacity 1.4s;
+	z-index: -1;
+}
+
+.button-container a:hover:not(.current)::after{
+    opacity: 1;
+}
+
+.button-container a:hover{
+	color: #fff;
+}
+
+.button-container .current{
+	background: linear-gradient(315deg, #fc5296 0%, #f67062 74%); 
+}
+
+
+@media(max-width: 1060px){
+	.sub{
+		font-size: 16px;
+	}
+	.heading .sub{
+		font-size: 30px;
+	}
+}
+
+@media(max-width: 880px){
+	.sub{
+		font-size: 13px;
+	}
+	.heading .sub{
+		font-size: 25px;
+	}
+
+	.button-container a{
+		padding: 12px;
+		font-size: 0.8em;
+	}
+}	
+
+@media(max-width: 640px){
+	.button-container a{
+		padding: 8px;
+	}
+}
+
+@media(max-width: 550px){
+	.sub{
+		font-size: 10px;
+	}
+	.heading .sub{
+		font-size: 20px;
+	}
+	.numbered-link{
+		position: absolute;
+		left: -10000px;
+	}
+	.button-container a{
+		margin-right: -12px;
+	}
+}
+
+@media(max-width: 355px){
+	.button-container a{
+		margin-right: -18px;
+	}
+}
